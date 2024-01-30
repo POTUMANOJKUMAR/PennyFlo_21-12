@@ -1,0 +1,366 @@
+@import "../../theme/variables.scss";
+@import "../../theme/fonts.scss";
+
+.insight-main-container {
+  display: flex;
+  margin: 25px;
+  flex-direction: column;
+
+}
+
+.insight-input-container{
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  
+}
+
+
+.insight-menu-container {
+    flex: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $border;
+  
+  }
+.insight-menu-item {
+    font-family: "Poppins";
+    font-weight: 500;
+    padding: 0 30px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #c0c0c0;
+    cursor: pointer;
+  }
+  .insight-active {
+    color: $login-blue;
+    border-bottom: 1px solid $login-blue;
+  }
+  .insight-up-icons{
+    display: flex;
+    flex-direction: row;
+ 
+    gap:15px;
+ 
+  
+  }
+  .bottom-icon-chart{
+   display: flex;
+   justify-content: space-between;
+    flex-direction: row ;
+  }
+
+  .insight-bottom-icons{
+    display: flex;
+    flex-direction: column ;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .chart-heading {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 20px;
+    color: #2d3436;
+  }
+  .insight-main-chart-container{
+    display: flex;
+    flex-direction: column;
+  
+
+   }
+  .top-charts,.chart-bottom{
+    margin-top: 15px;
+   width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:15px;
+    justify-content: space-between;
+ 
+   
+ 
+  }
+  .top-left-line-chart-container,
+  .top-right-bar-chart-container,
+  .bottom-left-bar-chart-container,
+  .bottom-right-bar-chart-container{
+    
+ background-color:#FFFFFF;
+ width: 50%;
+ padding: 10px 20px;
+ border-radius: 20px;
+box-shadow: 0px 0px 4px #DFE6E9;
+  }
+
+
+
+.option-lable{
+  margin-bottom: 10px;
+}
+
+
+@media (max-width:415px) {
+  .top-charts,.chart-bottom{
+    flex-direction: column;
+
+   
+  }.top-left-line-chart-container,
+  .top-right-bar-chart-container,
+  .bottom-left-bar-chart-container,
+  .bottom-right-bar-chart-container{
+    width: 100%;
+  }
+  .bottom-icon-chart{
+    flex-direction: column;
+  }
+  .insight-bottom-icons{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .insight-input-container{
+    flex-direction: column;
+    width: 100%;
+  }
+  .insight-up-icons{
+  flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  
+}
+
+
+@media (max-width:450px) {
+  .top-charts,.chart-bottom{
+    flex-direction: column;
+    width: 100%;
+
+   
+  }.top-left-line-chart-container,
+  .top-right-bar-chart-container,
+  .bottom-left-bar-chart-container,
+  .bottom-right-bar-chart-container{
+    width: 100%;
+  }
+  .bottom-icon-chart{
+    flex-direction: column;
+  }
+  .insight-bottom-icons{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .insight-up-icons{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .insight-input-container{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  
+  }
+
+}
+@media (max-width:550px) {
+  .top-charts,.chart-bottom{
+    flex-direction: column;
+    width: 100%;
+
+   
+  }.top-left-line-chart-container,
+  .top-right-bar-chart-container,
+  .bottom-left-bar-chart-container,
+  .bottom-right-bar-chart-container{
+    width: 100%;
+  }
+  .bottom-icon-chart{
+    flex-direction: column;
+  }
+  .insight-bottom-icons{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .insight-header-container{
+    flex-direction: column  ;
+    align-items: flex-start;
+  }
+  .insight-up-icons{
+    flex-direction: row;
+  }
+  .insight-input-container{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  
+  }
+
+}
+@media (max-width:650px) {
+  .top-charts,.chart-bottom{
+    flex-direction: column;
+    width: 100%;
+
+   
+  }.top-left-line-chart-container,
+  .top-right-bar-chart-container,
+  .bottom-left-bar-chart-container,
+  .bottom-right-bar-chart-container{
+    width: 100%;
+  }
+  .bottom-icon-chart{
+    flex-direction: column;
+  }
+  .insight-bottom-icons{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .insight-up-icons{
+    flex-direction: row;
+  }
+  .insight-input-container{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  
+  }
+
+}
+
+@media (max-width:750px) {
+  .top-charts,.chart-bottom{
+    flex-direction: column;
+    width: 100%;
+
+   
+  }.top-left-line-chart-container,
+  .top-right-bar-chart-container,
+  .bottom-left-bar-chart-container,
+  .bottom-right-bar-chart-container{
+    width: 100%;
+  }
+  .bottom-icon-chart{
+    flex-direction: column;
+  }
+  .insight-bottom-icons{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .insight-up-icons{
+    flex-direction: row;
+  }
+  .insight-input-container{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  
+  }
+
+}
+@media (max-width:850px) {
+  .top-charts,.chart-bottom{
+    flex-direction: column;
+    width: 100%;
+
+   
+  }.top-left-line-chart-container,
+  .top-right-bar-chart-container,
+  .bottom-left-bar-chart-container,
+  .bottom-right-bar-chart-container{
+    width: 100%;
+  }
+  .bottom-icon-chart{
+    flex-direction: column;
+  }
+  .insight-bottom-icons{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .insight-up-icons{
+    flex-direction: row;
+  }
+  .insight-input-container{
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  
+  }
+
+}
+
+@media (max-width:950px) {
+  .top-charts,.chart-bottom{
+    flex-direction: column;
+    width: 100%;
+
+   
+  }.top-left-line-chart-container,
+  .top-right-bar-chart-container,
+  .bottom-left-bar-chart-container,
+  .bottom-right-bar-chart-container{
+    width: 100%;
+  }
+  .bottom-icon-chart{
+    flex-direction: column;
+  }
+  .insight-bottom-icons{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .insight-up-icons{
+    flex-direction: row;
+  }
+  .insight-input-container{
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  
+  }
+
+
+}
+@media (max-width:1050px) {
+  .top-charts{
+    flex-direction: column;
+    width: 100%;
+
+   
+  }.chart-bottom{
+    flex-direction: column;
+    width: 100%;
+  }
+  .top-left-line-chart-container,
+  .top-right-bar-chart-container,
+  .bottom-left-bar-chart-container,
+  .bottom-right-bar-chart-container{
+    width: 100%;
+  }
+  .bottom-icon-chart{
+    flex-direction: column;
+  }
+  .insight-bottom-icons{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .insight-up-icons{
+    flex-direction: row;
+  }
+  .insight-input-container{
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  
+  }
+
+
+}

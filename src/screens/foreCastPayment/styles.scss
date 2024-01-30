@@ -1,0 +1,358 @@
+@import "../../theme/variables.scss";
+@import "../../theme/fonts.scss";
+
+.forecastpay {
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 100%;
+}
+
+.forecastpay-title-container {
+  display: flex;
+  flex-direction: row;
+  flex: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.forecastpay-menu-item {
+  font-family: "Poppins";
+  font-weight: 500;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #848484;
+  cursor: pointer;
+  margin-right: 10px;
+  position: relative;
+
+}
+
+.forecastpay-active {
+  color: $login-blue;
+  border-bottom: 1px solid $login-blue;
+}
+
+
+
+.forecastpay-from-date-container {
+  width: 35%;
+}
+
+.forecastpay-end-date-container {
+  width: 35%;
+}
+
+.forecastpay-select-container {
+  width: 40%;
+}
+
+.exports-lables {
+  width: 35%;
+}
+
+.scenarios-lables {
+  margin-left: 0px;
+  width: 56%;
+  text-wrap: nowrap;
+}
+
+.menuspay {
+  display: flex;
+  flex-direction: row;
+  flex: 30%;
+  align-items: center;
+
+}
+
+.date-pickerpay {
+  display: flex;
+  flex-direction: row;
+  flex: 35%;
+  gap: 10px;
+  align-items: center;
+}
+
+.buttonsss {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  flex: 30%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+// .container-fluid {
+//   padding: 15%;
+// }
+
+.cash-forecastpay{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dynamics-expenses{
+  padding-bottom: 20px;
+
+}
+
+.bar-option {
+  margin-left: 10px;
+}
+
+.option-lables {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.option-icons {
+  width: 12px;
+  height: 12px;
+}
+
+.dynamic-table-charts-container {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  max-height: 200px;
+  border: 1px solid #868686;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+}
+
+.dynamic-table-charts-container tr:last-child {
+  border-bottom: none;
+}
+
+.dynamic-table-charts-container td {
+  border-top: 1px solid #C2C2C2;
+  margin: 0; 
+   line-height: 0.5;
+   text-align: center;
+   padding-top: 2px;
+}
+
+.dynamic-table-charts-container tr {
+  color: black;
+}
+
+.recalculate-overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.redcircle {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: 20px;
+  right: -35px;
+  top: -42px;
+  cursor: pointer;
+}
+
+.redcanclebutton {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -34px;
+  right: -27px;
+  cursor: pointer;
+}
+
+.year-select {
+  width: 166px
+}
+
+.view-button {
+  width: 149px;
+  text-wrap: nowrap;
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .recalculate-overlay {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .RevenueScenario-card{
+    margin-bottom: 17px;
+  }
+  .forecastpay-card{
+    margin-bottom:17px ;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .cash-forecastpay {
+    flex-direction: column;
+  }
+
+  .view-button {
+    margin-top: 10px;
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 617px) and (max-width: 768px) {
+  .cash-forecastpay {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+  }
+ .cash-flows-forecast{
+  width:100%;
+ }
+  .view-button {
+    width: 100%;
+    text-wrap: nowrap;
+  }
+
+  .year-select {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 618px) {
+  .cash-forecastpay {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+ 
+  .view-button {
+    width: 140px;
+    text-wrap: nowrap;
+  
+  }
+
+  .year-select {
+    width: 140px;
+  }
+}
+
+@media screen and (min-width: 1130px) and (max-width: 1430px) {
+  .cash-forecastpay {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+  }
+ .cash-flows-forecast{
+  width:100%;
+ }
+  .view-button {
+    width: 100%;
+    text-wrap: nowrap;
+  }
+
+  .year-select {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1130px) {
+  .cash-forecastpay {
+    flex-direction: column;
+  }
+
+  .view-button {
+    margin-top: 10px;
+    width: 140px;
+  }
+
+  .year-select {
+    width: 140px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .forecastpay-title-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0 10px;
+  }
+
+  .forecastpay-from-date-container {
+    width: 48%;
+  }
+
+  .forecastpay-end-date-container {
+    width: 48%;
+  }
+
+  .forecastpay-select-container {
+    width: 100%;
+  }
+
+  .scenarios-lables {
+    margin-left: 0px;
+    margin-right: 5px;
+    width: 50%;
+    text-wrap: nowrap;
+  }
+
+  .buttonsss {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .exports-lables {
+    width: 45%;
+  }
+
+  .date-pickerpay {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+}
+@media screen and (max-width: 582px) {
+.scenarios-lables{
+  width: auto;
+}
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1360px) {
+
+  .forecastpay-title-container{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .menuspay {
+    flex: 20%;
+  }
+  .date-pickerpay {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .scenarios-lables {
+    width: 30%;
+    text-wrap: nowrap;
+  }
+
+  .buttonsss {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .exports-lables {
+    width: 30%;
+  }
+}

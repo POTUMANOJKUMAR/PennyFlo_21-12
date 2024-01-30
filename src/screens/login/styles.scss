@@ -1,0 +1,124 @@
+@import "../../theme/fonts.scss";
+@import "../../theme/variables.scss";
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  // align-items: center;
+
+  .login-content {
+    position: absolute;
+    top: 110px;
+    width: 327px;
+    height: 368px;
+    // text-align: center;
+    .content-title {
+      font-size: 42px;
+      font-weight: 500;
+      font-family: "Poppins";
+      color: $primary-color;
+    }
+    .login-text {
+      font-weight: 400;
+      font-size: 14px;
+      font-family: "Poppins";
+      color: $secondary-color;
+    }
+    // border: 1px solid black;
+  }
+
+  .login-input-container {
+    width: 100%;
+    margin: 15px 0;
+    text-align: start;
+    .login-input-label {
+      margin-bottom: 10px;
+      margin-top: 15px;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: "Poppins";
+      color: $primary-color;
+    }
+  }
+
+  .login-checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .login-checkbox-label {
+    font-family: "Poppins";
+    font-size: 12px;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-top: 2px;
+    color: $primary-color;
+  }
+  .login-forgot-text {
+    font-family: "Poppins";
+    font-size: 12px;
+    text-decoration: underline;
+    line-height: 16.34px;
+    cursor: pointer;
+    font-weight: 700;
+    // margin-left: 15px;
+    color: #636E72;
+  }
+  .login-copy-right {
+    font-size: 14px;
+    font-family: "Poppins";
+    color: $secondary-color;
+    text-align: center;
+    margin-top: 75px;
+
+    .login-privacy {
+      color: #636E72 !important;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      font-weight: 400;
+      cursor: pointer;
+
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 435px) {
+  .login-content {
+    position: relative;
+    margin-top: 140px;
+    border-top: 2px solid black;
+    width: 100%;
+    .logInLine{
+      display:block;
+      height: 30px;
+    }
+  
+  }
+  .content-title {
+    // text-align: center;
+    margin-top: 10px;
+  }
+}
+
+// @media only screen and (min-width: 435px) and (max-width: 800px){
+
+  // .login-content {
+  //   position: relative;
+  //   margin-top: 140px;
+  //   border-top: 2px solid black;
+  //   .logInLine{
+  //     display:block;
+  //     height: 30px;
+  //   }
+  
+  // }
+  // .content-title {
+  //   // text-align: center;
+  //   margin-top: 10px;
+  // }
+// }
+

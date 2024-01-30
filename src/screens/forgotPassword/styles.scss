@@ -1,0 +1,107 @@
+@import "../../theme/variables.scss";
+
+.forgot-password-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .forgot-container {
+    position: absolute;
+    top: 151px;
+    // text-align: center;
+
+    .forgot-content-title {
+      font-size: 42px;
+      font-weight: 500;
+      font-family: "Poppins";
+      color: $primary-color;
+    }
+    .forgot-login-text {
+      font-weight: 400;
+      font-size: 12px;
+      font-family: "Poppins";
+      color: $secondary-color;
+    }
+  }
+  .login-input-label {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Poppins";
+    color: $primary-color;
+  }
+
+  .otp-input {
+    width: 46px;
+    height: 40px;
+    border: 1px solid #a4a4a4;
+    text-align: center;
+    border-radius: 4px;
+    outline: none;
+    border-color: initial;
+    color: $primary-color;
+    margin: 25px 20px;
+  }
+  .resend-otp-text-container {
+    margin-left: 50px;
+    text-align: start;
+    .resend-otp-text {
+      font-family: "Poppins";
+      font-size: 12px;
+      text-decoration: underline;
+      line-height: 16.34px;
+      cursor: pointer;
+      font-weight: 700;
+      color: $primary-color;
+    }
+  }
+  .otp-seconds {
+    background-color: #dfdfdf;
+    padding: 3px;
+    border-radius: 4px;
+  }
+
+  .login-forgot-text {
+    font-family: "Poppins";
+    color: $login-grey;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .login-text {
+    color: $login-blue;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .login-copy-right {
+    font-size: 14px;
+    font-family: "Poppins";
+    color: $secondary-color;
+    text-align: center;
+    margin-top: 75px;
+  }
+  .login-privacy {
+    color: #636E72 !important;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 400;  }
+}
+
+@media only screen and (max-width: 435px) {
+  .forgot-container {
+    position: relative;
+    margin-top: 100px;
+    border-top: 2px solid black;
+    padding-top: 10px;
+  }
+  .content-title {
+    // text-align: center;
+    margin-top: 10px;
+  }
+  
+
+}
+

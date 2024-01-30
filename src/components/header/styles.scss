@@ -1,0 +1,165 @@
+@import "../../theme/fonts.scss";
+@import "../../theme/variables.scss";
+
+.header-container {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  background-color: $white;
+  border-radius: 7px;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.dashboard-container {
+  display: flex;
+  width: 45%;
+  align-items: center;
+}
+.dashboard-text {
+  font-family: "Poppins";
+  font-size: 30px;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-weight: 500;
+  color: $primary-color;
+}
+.dashboard-icon-container {
+  width: 40px;
+  height: 40px;
+  clip-path: circle();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dashboard-bg;
+  .dashboard-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+.connected-accounts-container {
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+.connected-accounts {
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: 400;
+  color: $header-black;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+.connected-icon-container {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  .connected-account-icon {
+    width: 20px;
+    height: 20px;
+ cursor: pointer;
+  }
+  .connected-account-plus{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  .integrations-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    cursor: pointer;
+
+  }
+  .email-icon {
+    width: 18px;
+    height: 14px;
+  }
+}
+
+.bell-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 15px;
+}
+.header-profile-container {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #dfe6e9;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .header-profile {
+    width: 32px;
+    height: 32px;
+  }
+}
+// .hamBurger{
+//   display: none;  
+// }
+.profile-pop-values{
+  font-weight: 500;
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap:20px;
+  color: #585252;
+}
+
+@media only screen and (min-width: 435px) and (max-width: 800px) {
+  .connected-accounts-container {
+    display: none;
+    padding: 0 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  // .header-profile-container{
+  //   display: none;
+  // }
+
+  .bell-icon{
+    display: none;
+  }
+
+  .header-container{
+    justify-content: space-between;
+    
+  }
+}
+
+@media screen and (max-width: 435px) {
+  // .hamBurger{
+  //   display:inline;  
+  // }
+
+  .connected-accounts-container {
+    display: none;
+    padding: 0 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  // .header-profile-container{
+  //   display: none;
+  // }
+
+  .bell-icon{
+    display: none;
+  }
+
+  .header-container{
+    justify-content: space-between;
+    
+  }
+
+}

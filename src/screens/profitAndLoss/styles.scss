@@ -1,0 +1,287 @@
+@mixin font-style($color, $size, $family, $weight, $lineHeight) {
+  color: $color;
+  font-size: $size;
+  font-family: $family;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+
+@import "../../theme/variables.scss";
+@import "../../theme/fonts.scss";
+
+
+.label-top {
+  transform: translateY(-10px); /* move the top label up by 10 pixels */
+}
+.label-bottom {
+  transform: translateY(10px); /* move the bottom label down by 10 pixels */
+}
+
+.profitLossContainer {
+  .profitLossHeader {
+    flex: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+
+    .profitLoss-pay-menu-container {
+      flex: 42%;
+      display: flex;
+      align-items: flex-end;
+      // background-color: aqua;
+      .profitLoss-pay-menu-item {
+        font-family: "Poppins";
+        font-weight: 500;
+        padding: 0 30px;
+        padding-bottom: 10px;
+        font-size: 14px;
+        color: #c0c0c0;
+        cursor: pointer;
+      }
+      .profitLoss-pay-active {
+        color: $login-blue;
+        border-bottom: 1px solid $login-blue;
+      }
+    }
+
+    .profitLossHeaderLeft {
+      display: flex;
+      flex-direction: row;
+      flex: 58%;
+      align-items: center;
+      gap: 5px;
+
+      button {
+        width: 80px;
+        height: 50px;
+        padding: 5px 10px 5px 10px;
+        background-color: $white;
+        color: $login-blue;
+        border: 1px solid $login-blue;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Poppins";
+        font-weight: 600;
+        font-size: 12px;
+        color: $login-blue;
+      }
+    }
+  }
+
+}
+
+.profitLossChartContainer{
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  .net-income-pie-chart{
+    background-color: #FFFFFF;
+    border: 0.5px solid lightgray;
+    height: 250px;
+    width: 45%;
+    border-radius: 20px;
+    padding: 10px;
+    h2{
+      @include font-style( #2D3436, 17px, Poppins, 500, 28px);
+    }
+    .pie-chart-data-full{
+      // background-color: red;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      .pie-chart-data1{
+        // background-color: greenyellow;
+        width: 170px;
+        height: 100%;
+      }
+      .profitLossPieOptions{
+        // background-color: aqua;
+        .profitLossPieOptionsIn{
+          display: flex;
+          align-items: center;
+          @include font-style( #000000, 12px, Poppins, 400, 28px);
+          margin-bottom: 5px;
+          img{
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+    }
+  }
+  .netIncomeTrendChartContainer{
+    background-color: #FFFFFF;
+    border: 0.5px solid lightgray;
+    height: 250px;
+    width: 45%;
+    border-radius: 20px;
+    padding: 10px;
+    h2{
+      @include font-style( #2D3436, 17px, Poppins, 500, 28px);
+      margin-bottom: 45px;
+    }
+  }
+}
+
+.profit-title-container {
+  display: flex;
+  align-items: flex-end;
+  // justify-content: flex-end;
+  gap: 17px;
+  width: 100%;
+  margin-left: 4%;
+}
+
+.profit-menu-item {
+  font-family: "Poppins";
+  font-weight: 500;
+  text-wrap: nowrap;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #848484;
+  cursor: pointer;
+  margin-right: 10px;
+  position: relative;
+  // margin-left: 10%;
+}
+
+.profit-active {
+  color: $login-blue;
+  border-bottom: 1px solid $login-blue;
+}
+
+.profit-from-date-container,
+.profit-end-date-container,
+.profit-select-container {
+  margin-top: 10px;
+}
+
+.profit-from-date-container {
+  width: 13%;
+  margin-left: 18%;
+}
+.profit-end-date-container {
+  width: 13%;
+}
+.profit-select-container {
+  width: 15%;
+}
+.profit-and-loss-exports-lable{
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 435px) {
+
+  .profit-title-container{
+    display: inline;
+
+    .menuItemContainer{
+      margin-left: 20px;
+      // justify-content: flex-start;
+    }
+
+    .profit-from-date-container{
+      display: block;
+      width: 90% ;
+      margin-left: 20px;
+    }
+    .profit-end-date-container{
+      display: block;
+      width: 90% ;
+      margin-left: 20px;
+    }
+    .profit-select-container{
+      display: block;
+      width: 90% ;
+      margin-left: 20px;
+    }
+    .profit-and-loss-exports-lable{
+      margin: 20px 0px 0px 7%;
+    }
+  }
+
+
+
+  .profitLossChartContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+
+    .net-income-pie-chart{
+      width: 100%;
+    }
+
+    .netIncomeTrendChartContainer{
+      width: 100%;
+
+    }
+  }
+}
+@media only screen and (min-width: 435px) and (max-width: 800px) {
+
+  .profit-title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+
+    .menuItemContainer{
+      width: 50%;
+      .profit-menu-item {
+        font-family: "Poppins";
+        font-weight: 500;
+        margin: 10px 12px;
+        font-size: 20px;
+        width: 50%;
+        color: #848484;
+        cursor: pointer;
+        position: relative;
+        // margin-left: 10%;
+      }
+      
+      .profit-active {
+        color: $login-blue;
+        border-bottom: 1px solid $login-blue;
+      }
+    }
+    .profit-from-date-container{
+      width: 90% ;
+      margin: 0px;
+    }
+    .profit-end-date-container{
+      width: 90% ;
+      margin-right: 20px;
+    }
+    .profit-select-container{
+      width: 90% ;
+      margin-right: 20px;
+    }
+    .profit-and-loss-exports-lable{
+      margin: 20px 0px 0px 0%;
+    }
+  }
+
+  .profitLossChartContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .net-income-pie-chart{
+      width: 48%;
+    }
+
+    .netIncomeTrendChartContainer{
+      width: 48%;
+
+    }
+  }
+}

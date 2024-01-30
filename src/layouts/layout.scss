@@ -1,0 +1,170 @@
+@import "../theme/variables.scss";
+@import "../theme/fonts.scss";
+
+#main {
+  transition: margin-left 0.5s;
+  font-family: "Inter";
+  // margin-left: 15% !important;
+  // background: linear-gradient(336deg, #faa21c 0%, #383333 30%);
+  background: #f6f6f6;
+}
+#pushmain {
+  transition: margin-left 0.5s;
+  font-family: "Inter";
+  margin-left: 15% !important;
+  // background: linear-gradient(336deg, #faa21c 0%, #383333 30%);
+  background: #f6f6f6;
+}
+
+
+.footer-item {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+}
+
+.login-main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.login-background-container {
+  background-color: #f0f3f5;
+  height: 100%;
+  position: relative;
+  .logo-container {
+    // height: 15%;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    .login-logo {
+      width: 191px;
+      height: 57px;
+    }
+  }
+  .login-image {
+    position: absolute;
+    top: 46px;
+    width: 100%;
+  }
+  .login-footer-container {
+    width: 100%;
+    position: absolute;
+    // bottom: 7%;
+    top: 80%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    // margin: 0% 25% 0% 25%;
+    // left: 100px;
+    // right: 23%;
+    // padding-top: 50% !important;
+    .footer-title {
+      font-family: "Poppins";
+      font-size: 28px;
+      color: $primary-color;
+      font-weight: 500;
+      margin-bottom: none !important;
+      line-height: 30px;
+      margin-bottom: 10px;
+      width: 80%;
+    }
+    .footer-content {
+      font-family: "Poppins";
+      color: $login-grey;
+      font-size: 18px;
+      font-weight: 400;
+      // margin-bottom: 50px;
+      width: 80%;
+    }
+  }
+}
+@media only screen and (min-width: 435px) and (max-width: 800px) {
+  #main {
+    transition: margin-left 0.5s;
+    font-family: "Inter";
+    margin-left: 0 !important;
+    // background: linear-gradient(336deg, #faa21c 0%, #383333 30%);
+    background: #f6f6f6;
+  }
+  #pushmain {
+    transition: margin-left 0.5s;
+    font-family: "Inter";
+    margin-left: 0 !important;
+    // background: linear-gradient(336deg, #faa21c 0%, #383333 30%);
+    background: #f6f6f6;
+  }
+
+  // .login-main-container {
+  //   height: 100vh;
+  //   width: 100%;
+  //   display: flex;
+  //   flex-direction: column;
+
+  //   .logo-container {
+  //     // height: 15%;
+  //     position: relative;
+  //     top: 35px;
+  //     left: 35px;
+  //   }
+
+  //   .login-image {
+  //     position: absolute;
+  //     top: 46px;
+  //     width: 100%;
+  //   }
+
+  //   .login-footer-container {
+  //     position: relative;
+  //     margin-top: 50px;
+  //   }
+  // }
+}
+@media only screen and (max-width: 435px) {
+  #main {
+    transition: margin-left 0.5s;
+    font-family: "Inter";
+    margin-left: 0 !important;
+    // background: linear-gradient(336deg, #faa21c 0%, #383333 30%);
+    background: #f6f6f6;
+  }
+  #pushmain {
+    transition: margin-left 0.5s;
+    font-family: "Inter";
+    margin-left: 0 !important;
+    // background: linear-gradient(336deg, #faa21c 0%, #383333 30%);
+    background: #f6f6f6;
+  }
+  .login-main-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .firstLog {
+      width: 100%;
+    }
+
+    .logo-container {
+      // height: 15%;
+      position: relative;
+      top: 35px;
+      left: 35px;
+    }
+
+    .login-image {
+      position: absolute;
+      top: 46px;
+      width: 100%;
+    }
+
+    .login-footer-container {
+      position: relative;
+      margin-top: 50px;
+    }
+  }
+}

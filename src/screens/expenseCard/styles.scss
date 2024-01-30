@@ -1,0 +1,69 @@
+@mixin font-style($color, $size, $family, $weight, $lineHeight) {
+    color: $color;
+    font-size: $size;
+    font-family: $family;
+    font-weight: $weight;
+    line-height: $lineHeight;
+  }
+
+.expenseCard{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    .expenseCardContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:50px 50px 0 50px ;
+        background-color: #FFFFFF;
+        width: 90%;
+        height: 80%;
+        padding: 80px 0px 40px 0px;
+        img{
+            width: 40%;
+            height: 30%;
+            margin-bottom: 40px;
+        }
+        h1{
+            @include font-style( #000000, 40px, Poppins, 500, 28px);
+            margin-bottom: 20px;
+        }
+        p{
+            @include font-style( #757575, 16px, Poppins, 400, 28px);
+            padding: 0 150px;
+           
+        }
+    }
+}
+@media only screen and (max-width: 435px) {
+
+    .expenseCardContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:50px 50px 0 50px ;
+        background-color: #FFFFFF;
+        width: 90%;
+        height: 80%;
+        padding: 80px 0px 40px 0px;
+        img{
+            width: 40%;
+            height: 30%;
+            margin-bottom: 40px;
+        }
+        h1{
+            @include font-style( #000000, 40px, Poppins, 500, 28px);
+            margin-bottom: 20px;
+        }
+        p{
+            @include font-style( #757575, 16px, Poppins, 400, 28px);
+            padding: 0px ;
+           
+        }
+    }
+  }

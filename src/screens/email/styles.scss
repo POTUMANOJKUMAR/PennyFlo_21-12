@@ -1,0 +1,204 @@
+@import "../../theme/fonts.scss";
+@import "../../theme/variables.scss";
+
+.email-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 834px;
+    position: relative;
+    margin-top: 70px;
+    height:900px;
+}
+
+.email-background {
+    position: relative;
+    z-index: 1;
+}
+
+.email-header {
+    display: block;
+}
+
+.email-image {
+    height: 66px;
+    padding-top: 58px;
+    text-align: center;
+    width: 834px;
+    height: 275px;
+    background-color: $login-blue;
+}
+
+.email-white {
+    height: 650px;
+    width: 834px;
+    background-color: rgba(255, 255, 255, 0.522);
+}
+
+.email-overlay {
+    width: 709px;
+    height: 550px;
+    margin-top: 154px;
+    margin-left: 63px;
+    border-radius: 4px;
+    background-color: $background-white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.email-center {
+    text-align: center;
+}
+
+.email-text {
+    padding-top: 20px;
+    font-family: "Poppins";
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0em;
+}
+
+.email-text2 {
+    padding-top: 1px;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 495px;
+}
+
+
+.email-table {
+    width: 648px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+}
+
+.table-head {
+    text-align: left;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.table-body {
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.th {
+    color: #848484;
+}
+
+.t-amount {
+    font-weight: 700;
+}
+
+.email-check {
+    width: 271px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 215px;
+    border-radius: 4px;
+    background-color: $login-blue;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: $background-white;
+}
+
+.email-work {
+    max-width: 700px;
+    height: 19px;
+    padding-top: 25px;
+    // padding-left: 110px; 	    	
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #616161;
+
+}
+
+.email-id {
+    max-width: 598px;
+    height: 21px;
+    padding-top: 40px;
+    padding-left: 118px;
+    font-family: "Poppins";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $login-blue;
+}
+
+.email-question {
+    width: 600px;
+    height: 38px;
+    padding-top: 40px;
+    padding-left: 100px;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: linear-gradient(0deg, #616161, #616161),
+        linear-gradient(0deg, $login-blue, $login-blue);
+}
+
+.email-address {
+    color: $login-blue;
+}
+
+.email-footer {
+    width: 709px;
+    height: 130px;
+    margin-top: 750px;
+    margin-left: 63px;
+    border-radius: 4px;
+    background-color: $login-blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.cheers {
+    font-family: "Poppins";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.email-privacy {
+    font-family: "Poppins";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: $background-white;
+}

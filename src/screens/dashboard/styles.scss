@@ -1,0 +1,409 @@
+@import "../../theme/variables.scss";
+@import "../../theme/fonts.scss";
+
+.dashboard-main-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.dashboard-left-container {
+  width: 75%;
+  padding: 25px;
+}
+.dashboard-left-full-container {
+  width: 100%;
+  padding: 25px;
+}
+.dashboard-date-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dashboard-right-container {
+  width: 25%;
+  min-height: 100vh;
+  background-color: $white;
+}
+.over-due-main-container {
+  padding: 25px 25px 15px 25px;
+  border-bottom: 2px solid $border;
+}
+.banks-main-container {
+  padding: 15px;
+  border-bottom: 2px solid $border;
+}
+.over-due-container {
+  width: 100%;
+  height: 46px;
+  padding: 0 10px;
+  border: 1px solid $login-blue;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.overdue-icon {
+  width: 28px;
+  height: 28px;
+}
+.overdue-text-container {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+.overdue-text {
+  width: 100%;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 10px;
+  color: $header-black;
+
+}
+.right-icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
+.overdue-data {
+  font-weight: 600;
+  font-size: 20px;
+  color: $login-blue;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  margin-right: 5px;
+}
+.banks-text {
+  font-weight: 600;
+  font-family: "Poppins";
+  font-size: 22px;
+  color: $sidebar-black;
+}
+.banks-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $border;
+  //   padding-bottom: 5px;
+}
+.bank-title-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.total-container {
+  text-wrap: nowrap;
+  display: flex;
+  // width: 70%;
+  align-items: center;
+  justify-content: space-between;
+}
+.total-title {
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #000000;
+  margin-top: 15px;
+  margin-right: 10px;
+  // margin-left: 5px;
+}
+.bank-title {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.bank-default {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 12px;
+  color: #b8b8b8;
+}
+.total-amount {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  padding-top: 15px;
+  // width: 35%;
+}
+.bank-amount {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  padding-top: 15px;
+  width: 35%;
+}
+.bank-right-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.notification-main-container {
+  padding: 15px;
+}
+.menu-container {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid $border;
+}
+
+.menu-item {
+  font-family: "Poppins";
+  font-weight: 500;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #c0c0c0;
+  cursor: pointer;
+}
+.active {
+  color: $login-blue;
+  border-bottom: 1px solid $login-blue;
+}
+.notification-profile {
+  width: 36px;
+  height: 36px;
+}
+.notification-custom-container {
+  padding: 10px 5px 10px 5px;
+  border-bottom: 1px solid $border;
+}
+.notification-text {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 11px;
+  margin-left: 10px;
+  color: #505050;
+}
+.notification-content {
+  display: flex;
+  padding: 10px 0;
+}
+.btn-container {
+  width: 80px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.btn-container-abort {
+  width: 120px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.dashboard-from-date-container {
+  width: 15%;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.dashboard-select-container {
+  width: 25%;
+}
+.main-chart-container {
+  width: 100%;
+  height: 360px;
+  background-color: $white;
+  margin-top: 10px;
+  border-radius: 16px;
+  padding: 25px;
+}
+.cash-flow {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  color: #2d3436;
+}
+.mixed-chart-container {
+  width: 100%;
+  height: 236px;
+}
+.pie-chart-container {
+  width: 100%;
+  height: 250px;
+  background-color: $white;
+  margin-top: 10px;
+  border-radius: 16px;
+  padding: 25px;
+}
+.pie-chart-data1 {
+  width: 150px;
+  height: 150px;
+}
+.pie-chart {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+.dashboard-bar-chart-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.notification-profile-generator {
+  width: 40px;
+  height: 40px;
+  clip-path: circle();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+@media only screen and (min-width: 435px) and (max-width: 800px) {
+  .dashboard-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dashboard-left-container {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .dashboard-right-container {
+    width: 100%;
+    padding: 10px;
+    // margin: 25px;
+  }
+
+  .dashboard-date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .dashboard-from-date-container {
+      width: 90%;
+    }
+  }
+
+  .dashboard-select-container {
+    width: 90%;
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+
+  .doughnutCards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    // margin-bottom: 10px;
+  }
+
+  .main-chart-container {
+    width: 100%;
+    height: fit-content;
+    background-color: $white;
+    margin-top: 20px;
+    border-radius: 16px;
+    padding: 25px;
+  }
+
+  .pie-chart-container {
+    height: fit-content;
+    .pie-chart {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  .doughnutCards {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .dashboard-right-container {
+    width: 95%;
+  }
+  .over-due-main-container {
+    display: flex;
+    flex-direction: row;
+    // gap: 20px;
+    justify-content: space-between;
+
+    .over-due-container {
+      width: 40%;
+    }
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .dashboard-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dashboard-left-container {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .dashboard-right-container {
+    width: 100%;
+    padding: 10px;
+    // margin: 25px;
+  }
+
+  .dashboard-date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .dashboard-from-date-container {
+      width: 90%;
+    }
+  }
+
+  .dashboard-select-container {
+    width: 90%;
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+
+  .doughnutCards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    // margin-bottom: 10px;
+  }
+
+  .main-chart-container {
+    width: 100%;
+    height: fit-content;
+    background-color: $white;
+    margin-top: 20px;
+    border-radius: 16px;
+    padding: 25px;
+  }
+
+  .pie-chart-container {
+    height: fit-content;
+    .pie-chart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+}

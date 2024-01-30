@@ -1,0 +1,77 @@
+$primary-color: #2d3436;
+$secondary-color: #b2bec3;
+$white: #ffffff;
+$black: #000000;
+$grey: #8a92a6;
+$green: #3aa96a;
+$login-blue: #7e57ff;
+$grey-F5F6FA: #f5f6fa;
+$background-white: #ffffff;
+$navy-blue: #232d42;
+$grey-F5F6FA: #f5f6fa;
+$gray-sideBar: #bdbdbd;
+$border: #f1f1f1;
+$menu_icon: #8a92a6;
+$login-grey: #636e72;
+$dashboard-bg: #eaedef;
+$header-black: #434343;
+$border-color: #b2bec3;
+$sidebar-black: #111314;
+$delete-red: #ff6659;
+
+$myColors: (
+  "white": $white,
+  "grey": $gray-sideBar,
+  "grey-82": $grey,
+  "green": $green,
+  "primary-color": $primary-color,
+);
+@each $name, $colors in $myColors {
+  $index: index($myColors, $colors);
+
+  .text-#{$name} {
+    color: $colors;
+  }
+
+  .bg-#{$name} {
+    background-color: $colors;
+  }
+
+  .bc-#{$name} {
+    border-color: $colors;
+  }
+}
+
+$full-height: 100vh;
+
+.text-black {
+  color: $black;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.makeStyles-toolbar-151 {
+  min-height: 0px !important;
+}
+
+.makeStyles-drawer-147 {
+  width: 220px !important;
+}
+
+.makeStyles-content-8 {
+  margin-left: 22px !important;
+}
+
+.ant-select-selector {
+  border: none !important;
+}
+
+.ant-switch-checked {
+  background-color: #0655a3 !important;
+}
+
+body {
+  background-color: #f6f8fa !important;
+}

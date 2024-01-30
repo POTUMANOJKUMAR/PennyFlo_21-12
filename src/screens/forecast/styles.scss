@@ -1,0 +1,607 @@
+@import "../../theme/fonts.scss";
+
+@import "../../theme/variables.scss";
+
+@mixin font-style($color, $size, $family, $weight, $lineHeight) {
+  color: $color;
+
+  font-size: $size;
+
+  font-family: $family;
+
+  font-weight: $weight;
+
+  // line-height: $lineHeight;
+}
+
+.formContainer {
+  .header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 25px 7px 25px;
+
+    // background-color: red;
+
+    // border-bottom: 1px solid #CDCDCD;
+
+    .heading {
+      @include font-style(#111314, 20px, Poppins, 600, 0px);
+    }
+
+    img {
+      height: 30px;
+
+      width: 30px;
+    }
+  }
+
+  hr {
+    background-color: #cdcdcd;
+  }
+
+  .mainForm {
+    form {
+      .formDetails {
+        display: flex;
+
+        flex-direction: column;
+
+        padding: 0 25px 0 25px;
+
+        margin-bottom: 15px;
+
+        label {
+          @include font-style(#2d3436, 14px, Poppins, 600, 28px);
+        }
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+
+    justify-content: space-evenly;
+
+    padding: 15px 25px 55px 25px;
+  }
+}
+
+.forecast-pie-chart-container {
+  display: flex;
+
+  flex-direction: column;
+
+  font-style: "Poppins";
+}
+
+.forecast-popup-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  img {
+    width: 35px;
+    height: 35px;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+}
+
+.forecast-pie-chart-container {
+  display: flex;
+  flex-direction: column;
+  font-style: "Poppins";
+  padding-right: 35px;
+}
+
+.chart-name {
+  color: #676767;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+.chart-percentage {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+
+.pie-chart-data {
+  height: 55px;
+  width: 55px;
+}
+
+.forecast-main-chart-container {
+  display: flex;
+  flex-direction: row;
+
+  font-style: "Poppins";
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pie-chart-and-percentage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-style: "Poppins";
+}
+
+.forcast-chart-container {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.forecast-popup-values {
+  margin-top: 35px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forecast-popup-values1 {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  gap: 120px;
+}
+
+.forecast-header-values {
+  font-size: 18px;
+  color: #676767;
+  font-weight: 500;
+}
+
+.forecast-header-values1 {
+  font-size: 24px;
+  color: #2d3436;
+  font-weight: 600;
+}
+
+.font {
+  color: #676767;
+}
+
+//size of the Doughnut
+
+.pie-chart-data {
+  height: 55px;
+
+  width: 55px;
+}
+
+.top {
+  display: flex;
+
+  flex-direction: row;
+
+  font-style: "Poppins";
+}
+
+.container {
+  padding: 0;
+
+  margin-top: 18px;
+}
+
+.forecast {
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 100%;
+}
+
+.forecast-title-container {
+  display: flex;
+  flex-direction: row;
+  flex: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.forecast-menu-item {
+  font-family: "Poppins";
+  font-weight: 500;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #848484;
+  cursor: pointer;
+  margin-right: 10px;
+  position: relative;
+
+}
+
+.forecast-active {
+  color: $login-blue;
+  border-bottom: 1px solid $login-blue;
+}
+
+.forecast-from-date-container {
+  width: 35%;
+}
+
+.forecast-end-date-container {
+  width: 35%;
+}
+
+.forecast-select-container {
+  width: 40%;
+}
+
+.exports-lable {
+  width: 35%;
+}
+
+.scenarios-lable {
+  margin-left: 0px;
+  width: 56%;
+  text-wrap: nowrap;
+}
+
+.menus {
+  display: flex;
+  flex-direction: row;
+  flex: 30%;
+  align-items: center;
+}
+
+.date-picker {
+  display: flex;
+  flex-direction: row;
+  flex: 35%;
+  gap: 10px;
+  align-items: center;
+}
+
+.buttonss {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  flex: 30%;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-fluid {
+  padding: 15;
+}
+
+
+.card {
+  border: none;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  height: 100%;
+}
+
+.card-body {
+  padding: 20px;
+  height: 100%;
+}
+
+.dynamic-expenses {
+  padding-bottom: 20px;
+}
+
+.cash-forecast {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.bar-option {
+  margin-left: 10px;
+}
+
+.option-lables {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.option-icons {
+  width: 12px;
+  height: 12px;
+}
+
+.dynamic-expenses-chart-containers {
+  margin-left: 10px;
+}
+
+.travel-select {
+  width: 166px
+}
+
+.view-detail {
+  width: 149px;
+  text-wrap: nowrap;
+
+}
+
+@media screen and (max-width: 1600px) {
+  .forecast-from-date-container {
+    margin-left: 0%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .cash-forecast {
+    flex-direction: column;
+  }
+
+  .view-detail {
+    margin-top: 10px;
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 617px) and (max-width: 768px) {
+  .cash-forecast {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .cash-flow {
+    width: 100%;
+  }
+
+  .view-detail {
+    width: 100%;
+    text-wrap: nowrap;
+  }
+
+  .travel-select {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .cash-forecast {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .view-detail {
+    width: 140px;
+    text-wrap: nowrap;
+  }
+
+  .travel-select {
+    width: 140px;
+  }
+}
+
+@media screen and (min-width: 1130px) and (max-width: 1430px) {
+  .cash-forecast {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .cash-flow {
+    width: 100%;
+  }
+
+  .view-detail {
+    width: 100%;
+    text-wrap: nowrap;
+  }
+
+  .travel-select {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1130px) {
+  .cash-forecast {
+    flex-direction: column;
+  }
+
+  .view-detail {
+    margin-top: 10px;
+    width: 140px;
+  }
+
+  .travel-select {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .scenario-container {
+    margin-bottom: 17px;
+  }
+
+  .forecast-card {
+    margin-bottom: 17px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .forecast-title-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0 10px;
+  }
+
+  .forecast-from-date-container {
+    width: 48%;
+  }
+
+  .forecast-end-date-container {
+    width: 48%;
+  }
+
+  .forecast-select-container {
+    width: 100%;
+  }
+
+  .scenarios-lable {
+    margin-left: 0px;
+    margin-right: 5px;
+    width: 50%;
+    text-wrap: nowrap;
+  }
+
+  .buttonss {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .exports-lable {
+    width: 45%;
+  }
+
+  .date-picker {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .scenarios-lable{
+    width: auto;
+  }
+  
+  }
+
+@media screen and (min-width: 800px) and (max-width: 1360px) {
+  .forecast-title-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .menus {
+    flex: 20%;
+  }
+
+  .date-picker {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .scenarios-lable {
+    width: 30%;
+    text-wrap: nowrap;
+  }
+
+  .buttonss {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .exports-lable {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 285px) {
+  .forecast-title-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .date-pickersss {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .forecast-from-date-container {
+    width: 100%;
+  }
+
+  .forecast-end-date-container {
+    width: 100%;
+  }
+
+  .forecast-select-container {
+    width: 100%;
+  }
+}
+@media (max-width:550px) {
+  .forecast-popup-header-container{
+    p{
+      font-size: 20px;
+    }
+  }
+  .forecast-main-chart-container{
+
+    .forcast-chart-container{
+
+.chart-name{
+font-size: 15px;
+}
+.chart-percentage{
+  font-size: 20px;
+}
+    }
+  }
+  .forecast-header-values{
+    font-size: 15px;
+    text-wrap: nowrap;
+  }
+  .forecast-header-values1{
+    font-size: 20px;
+  }
+  
+}
+@media only screen and (min-width:300px) and (max-width:441px) {
+  .forecast-pie-chart-container{
+    padding-right: 0;
+  }
+  .forecast-main-chart-container{
+ flex-wrap: wrap;
+  }
+  .forecast-popup-values{
+ flex-wrap: wrap;
+  }
+  .forecast-popup-values1{
+    flex-wrap: wrap;
+  gap:0;
+   justify-content: space-between;
+  }
+}
+@media only screen and (min-width:579px) and (max-width:990px) {
+  .forecast-pie-chart-container{
+    padding-right: 0;
+  }
+  .forecast-popup-values1{
+text-wrap: nowrap;
+  }
+}
+@media only screen and (min-width:435px) and (max-width:600px) {
+  .forecast-pie-chart-container{
+    padding-right: 0;
+  }
+}

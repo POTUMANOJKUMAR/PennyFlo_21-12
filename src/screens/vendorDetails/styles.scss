@@ -1,0 +1,112 @@
+@mixin font-style($color, $size, $family, $weight, $lineHeight) {
+  color: $color;
+  font-size: $size;
+  font-family: $family;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+.mainContainer {
+  // align-items: center;
+  font-family: "Poppins";
+  margin: 3.5vh 3vw;
+
+  .backButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e57ff;
+    margin-bottom: 2.5vh;
+    img {
+      width: 10px;
+      height: 20px;
+    }
+  }
+  .vendorDetailsContainer {
+    background-color: #ffffff;
+    padding: 1.5% 4% 1% 3%;
+    margin-bottom: 2%;
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2.5%;
+      padding-bottom: 0;
+      border-bottom: 1px solid #e6e6e6;
+      p {
+        @include font-style(#111314, 19px, Poppins, 600, 28px);
+      }
+      .edit {
+        img {
+          height: 15px;
+          width: 15px;
+          margin-right: 3px;
+        }
+        @include font-style(#7e57ff, 11px, Poppins, 400, 28px);
+      }
+    }
+
+    .row {
+      // margin-bottom: 3%;
+      .col {
+        .top {
+          @include font-style(#676767, 14px, Poppins, 500, 22px);
+        }
+        .bottom {
+          @include font-style(#2d3436, 18px, Poppins, 600, 22px);
+        }
+      }
+    }
+  }
+  .yellow {
+    @include font-style(#dd9302, 12px, Poppins, 600, 28px);
+  }
+  .green {
+    @include font-style(#019b2c, 12px, Poppins, 600, 28px);
+  }
+  .blue {
+    @include font-style(#1086f2, 12px, Poppins, 600, 28px);
+  }
+
+  a {
+    @include font-style(#7e57ff, 12px, Poppins, 600, 28px);
+    border-bottom: 1px solid #7e57ff;
+    text-decoration: none;
+  }
+
+  .tRow {
+    @include font-style(#000, 12px, Poppins, 600, 28px);
+  }
+
+  .tRowAmt {
+    @include font-style(#000, 14px, Poppins, 700, 28px);
+  }
+
+  .invoicesContainer {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    padding: 1.5% 4% 1% 3%;
+
+    .heading {
+      p {
+        @include font-style(#111314, 19px, Poppins, 600, 28px);
+        // margin-left: 3%;
+        // padding-top: 1.5%;
+        padding-bottom: 2.5%;
+        border-bottom: 1px solid #e6e6e6;
+      }
+    }
+    .invoiceTable {
+      width: 100%;
+      height: 100%;
+      overflow: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}

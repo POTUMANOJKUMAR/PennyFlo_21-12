@@ -1,0 +1,40 @@
+@import "../../theme/variables.scss";
+@import "../../theme/fonts.scss";
+
+
+.profile-menu-container {
+  width:100%;
+  display: flex;
+  margin-top: 25px;
+  margin-left: 15px;
+
+flex-direction: row;
+flex-wrap: wrap;
+  border-bottom: 1px solid $border;
+}
+
+.profile-menu-item {
+  font-family: "Poppins";
+  font-weight: 500;
+  padding: 0 30px;
+  white-space: nowrap;
+ padding-bottom: 10px;
+  font-size: 16px;
+  color:#848484;
+  cursor: pointer;
+ 
+
+}
+.profile-active {
+  color: $login-blue;
+  border-bottom: 1px solid $login-blue;
+}
+
+
+@media only screen and (max-width:375px)  {
+  .profile-menu-container{
+    display: none;
+  }
+}
+
+

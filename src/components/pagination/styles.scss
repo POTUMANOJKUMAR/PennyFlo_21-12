@@ -1,0 +1,95 @@
+@import "../../theme/variables.scss";
+@import "../../theme/fonts.scss";
+
+.custom-pagination-container {
+  border: none !important;
+  display: flex;
+  align-items: center;
+}
+.pagination-icon {
+  width: 7px;
+  height: 13px;
+  // margin-bottom: 5px;
+}
+.previous-text-container {
+  margin-bottom: 100px;
+}
+.previous-text-blue {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 15px;
+  color: $login-blue;
+}
+.previous-text-black {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 15px;
+  color: #697077;
+}
+.next-text-black {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  color: #697077;
+  margin-right: 15px;
+}
+.next-text-blue {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  color: $login-blue;
+  margin-right: 15px;
+}
+
+.custom-page-link {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+  color: inherit;
+  font-family: "Open-Sans";
+  &:hover {
+    color: inherit !important;
+  }
+}
+.custom-page-item {
+  width: 28px;
+  height: 28px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto";
+  background-color: transparent;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $login-blue;
+  &:hover {
+    color: inherit;
+  }
+}
+.pagination-active {
+  background-color: #7e57ff1f;
+  color: $login-blue;
+  border: 1px solid #7e57ff1f;
+  &:hover {
+    color: inherit !important;
+  }
+}
+.pagination-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: $login-blue;
+  font-family: "Roboto";
+
+}
+
+
+
+// @media only  screen and (min-width:300px) and (max-width:600px) {
+//   .previous-text-blue , .previous-text-black , .next-text-black  , .next-text-blue {
+//    display: none;
+//   }
+ 
+// }

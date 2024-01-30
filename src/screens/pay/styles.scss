@@ -1,0 +1,238 @@
+@import "../../theme/variables.scss";
+@import "../../theme/fonts.scss";
+@mixin font-style($color, $size, $family, $weight, $lineHeight) {
+  color: $color;
+  font-size: $size;
+  font-family: $family;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+.yellow {
+  @include font-style(#dd9302, 12px, Poppins, 600, 28px);
+  text-align: left;
+}
+.green {
+  @include font-style(#019b2c, 12px, Poppins, 600, 28px);
+  text-align: left;
+}
+.blue-color {
+  color: #1086f2 !important;
+  font-size: 12px;
+  font-family: Poppins;
+  text-align: left;
+}
+
+.tRowAmt {
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  text-align: left;
+}
+
+.anchor {
+  @include font-style(#7e57ff, 14px, Poppins, 600, 15px);
+  border-bottom: 1px solid #7e57ff;
+  text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.pay-main-container {
+  display: flex;
+}
+.pay-menu-container {
+  width: 75%;
+  display: flex;
+  border-bottom: 1px solid $border;
+}
+.pay-left-container {
+  width: 75%;
+  padding: 25px;
+}
+.pay-left-full-container {
+  width: 100%;
+  padding: 25px;
+}
+.pay-menu-main-container {
+  display: flex;
+  align-items: center;
+}
+.pay-right-container {
+  width: 25%;
+  height: fit-content;
+  background-color: #fff;
+  padding: 3% 1%;
+  .payRightContainerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include font-style(#111314, 24px, Poppins, 600, 28px);
+    .readyToPayInvoices {
+      @include font-style(#000000, 18px, Poppins, 600, 28px);
+    }
+  }
+  .readyToPayTable {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 30px;
+    td {
+      @include font-style(#141414, 16px, Poppins, 600, 28px);
+    }
+    button {
+      background-color: #fff;
+      border: none;
+      margin-left: 18px;
+      @include font-style(#7e57ff, 16px, Poppins, 600, 28px);
+      img {
+        width: 13px;
+        height: 7px;
+      }
+    }
+  }
+  .paymentDateContainer {
+    display: flex;
+    flex-direction: column;
+    p {
+      @include font-style(#878787, 16px, Poppins, 500, 28px);
+    }
+    .paymentDateCheckBoxes {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      @include font-style(#000000, 16px, Poppins, 500, 28px);
+      label {
+        margin-bottom: 8px;
+      }
+    }
+    .paymentDateSelectBox {
+      @include font-style(#adadad, 13px, Poppins, 500, 28px);
+    }
+  }
+  .readyToPayFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    .readyToPayTotalAmt {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      @include font-style(#adadad, 16px, Poppins, 500, 28px);
+      p {
+        @include font-style(#141414, 28px, Poppins, 600, 28px);
+      }
+    }
+    .readyToPayButton {
+      width: 120px;
+      height: 10px;
+    }
+  }
+}
+.pay-menu-item {
+  font-family: "Poppins";
+  font-weight: 500;
+  padding: 0 30px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #c0c0c0;
+  cursor: pointer;
+}
+.pay-active {
+  color: $login-blue;
+  border-bottom: 1px solid $login-blue;
+}
+.pay-filter {
+  width: 44px;
+  height: 44px;
+  border: 1px solid $login-blue;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-icon {
+  width: 18px;
+  height: 11px;
+}
+.add-invoice-container {
+  width: 172px;
+  margin-left: 20px;
+}
+.paginationStyle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 435px) {
+  .pay-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pay-left-container {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .pay-right-container {
+    width: 100%;
+    padding: 25px;
+    // margin: 25px;
+  }
+
+  // .pay-menu-container{
+  //   // overflow: scroll;
+  //   // margin-left: 20px;
+  // }
+
+  .pay-menu-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .smallScreenDiv {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (min-width: 435px) and (max-width: 800px) {
+  .pay-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pay-left-container {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .pay-right-container {
+    width: 90%;
+    padding: 25px;
+    // margin: 25px;
+  }
+
+  // .pay-menu-container{
+  //   // overflow: scroll;
+  //   // margin-left: 20px;
+  // }
+
+  .pay-menu-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .smallScreenDiv {
+    margin-top: 25px;
+  }
+}

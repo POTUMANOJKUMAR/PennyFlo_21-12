@@ -1,0 +1,240 @@
+@import "../../theme/variables.scss";
+@import "../../theme/fonts.scss";
+@mixin font-style($color, $size, $family, $weight, $lineHeight) {
+  color: $color;
+  font-size: $size;
+  font-family: $family;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+
+.accounts-container {
+  padding: 15px 20px 20px 25px;
+  background-color: #ffffff;
+  margin: 25px;
+}
+
+.accounts-data-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accounts-btn {
+  width: 150px;
+}
+span {
+  color: white;
+}
+.accounts-header {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+.underline {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.networking-image-icons {
+  width: 15px;
+  height: 15px;
+}
+
+.color {
+  color: #0fb920 !important;
+}
+
+.accounts-table-body {
+  background-color: #ececec;
+}
+
+.clickpayments {
+  margin-left: 30%;
+}
+
+.accounts-row {
+  background-color: transparent !important;
+  width: 100%;
+}
+
+.accounts-image-icons {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dfdfdf;
+  margin-right: 15px;
+  border-radius: 4px;
+  padding: 8px 4px;
+}
+.account-image-icons {
+  width: 33px;
+  height: 33px;
+  border: 1px solid #dfdfdf;
+  margin-right: 15px;
+  border-radius: 4px;
+  padding: 8px 4px;
+}
+.grey-text {
+  color: #595959 !important;
+  // text-align: left;
+  // margin-left: 100%;
+}
+
+// .identification {
+//   padding-left: 10px; /* Adjust the padding as needed */
+//   align-items: center; /* Adjust the alignment as needed */
+// }
+
+.table2 td {
+  padding-left: -5%; /* Adjust the padding as needed or set to 0 for no left padding */
+}
+
+.identification {
+  margin-left: 20%;
+  text-align: start;
+}
+// .bank{
+//   margin-left: 10%;
+//   text-align: center;
+// }
+.status {
+  margin-right: 20%;
+  // text-align: center;
+  // justify-content: flex-start;
+  // text-align: start;
+}
+.clickpayment {
+  margin-left: 20%;
+  text-align: center;
+}
+.bin {
+  margin-right: 10%;
+  text-align: center;
+}
+.update {
+  margin-left: 17%;
+  text-align: start;
+}
+
+.accTableContainer {
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .accTable {
+    min-width: 900px;
+
+    .accTableHeader {
+      padding-left: 25px;
+      align-items: center;
+      justify-content: space-evenly;
+      @include font-style(#848484, 14px, Poppins, 400, 48px);
+      text-wrap: nowrap;
+      // .accHeader{
+      //   margin-left: 10px;
+      //   // width: 12%;
+      //   flex: 1;
+      // }
+      // .accBalance{
+      //   flex: 2;
+      //   text-align: center;
+      //   margin-left: 10px;
+
+      // }
+    }
+    .accTableBody {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .individualBankAccountsContainer {
+        margin-bottom: 10px;
+        background-color: #F9FAFB;
+        border: 1px solid #ececec;
+        border-radius: 4px;
+        width: 100%;
+        padding: 25px 0px 25px 25px;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        .individualBankAccountsHeader {
+          // display: flex;
+          // flex-direction: row;
+          align-items: center;
+          @include font-style(#595959, 14px, Lato, 400, 28px);
+
+          .bankLogoName {
+            display: flex;
+            align-items: center;
+            @include font-style(#000000, 14px, Lato, 600, 28px);
+            // justify-content: space-between;
+            .bankLogo{
+              height: 35px;
+              width: 35px;
+              background-color: #ffffff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 5px;
+              img{
+                height: 20px;
+                width: 20px;
+              }
+            }
+            
+          }
+        }
+
+        .individualBankAccountsBody{
+
+          .singleBankAccount{
+            @include font-style(#000000, 14px, Lato, 600, 28px);
+            align-items: center;
+            margin-top: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ececec;
+            border-radius: 4px;
+            padding: 10px 0 10px 0;
+            .singleBankAccountCurrencyLogoName{
+              display: flex;
+              align-items: center;
+              gap: 3px;
+              img{
+                width: 35px;
+                height: 40px;
+                border: none;
+              }
+            }
+            // .singleBankAccountDetail{
+
+            // }
+            .singleBankAccountDetailActive{
+              color:#0FB920 ;
+            }
+            .singleBankAccountDetailInactive{
+              color:red ; 
+            }
+            .singleBankAccountSwitch{
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+            .singleBankAccountBalance{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:432px) {
+  .accounts-data-header{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
